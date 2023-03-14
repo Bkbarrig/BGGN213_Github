@@ -7,7 +7,7 @@ This repo is for my UCSD bioinformatics class.
 This is a store of my class-work for BGGN 213 Winter 2023 at UC San Diego. 
 
 ## Content 
-- Class05:[Data exploration and visualization in R](https://github.com/Bkbarrig/BGGN213_Github/tree/main/class05)
+- Class05:[Data exploration and visualization in R](https://github.com/Bkbarrig/BGGN213_Github/tree/main/class05.md)
 - Clas06:[Why, when, and how writing your own R functions](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class06_files)
 - Class07:[Intro to machine learning for Bioinformatics](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class07_files)
 - Class08:[Unsupervised mini-project](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class08_files)
