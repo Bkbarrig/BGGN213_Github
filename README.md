@@ -12,7 +12,7 @@ This is a store of my class-work for BGGN 213 Winter 2023 at UC San Diego.
 - Class07:[Intro to machine learning for Bioinformatics](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class07_files)
 - Class08:[Unsupervised mini-project](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class08_files)
 - Class09:[Structual Bioinformatics AlphaFold](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class_09_files)
-- Class10:[Halloween Candy Mini-Project](https://github.com/Bkbarrig/BGGN213_Github/tree/main/Class10_files)
+- Class10:[Halloween Candy Mini-Project](https://github.com/Bkbarrig/BGGN213_Github/blob/main/Class10_files/Class10.qmd)
 - Class 11:[Genome infomatics and high throughput sequencing]
 - Class 12:[RNA seq analysis]
 - Class 13:[RNA seq mini project]
