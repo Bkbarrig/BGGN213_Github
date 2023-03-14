@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bianca Barriga">
+
+<title>Class 10: Halloween Mini-project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Class10_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Class10_files/libs/quarto-html/quarto.js"></script>
+<script src="Class10_files/libs/quarto-html/popper.min.js"></script>
+<script src="Class10_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Class10_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Class10_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Class10_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Class10_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Class10_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Class10_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Class10_files/libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="Class10_files/libs/plotly-binding-4.10.1/plotly.js"></script>
+<script src="Class10_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="Class10_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="Class10_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="Class10_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="Class10_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="Class10_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Class 10: Halloween Mini-project</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Bianca Barriga </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="importing-candy-data" class="level2">
+<h2 class="anchored" data-anchor-id="importing-candy-data">Importing candy data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>candy_file <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv"</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>candy <span class="ot">=</span> candy_file</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(candy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             chocolate fruity caramel peanutyalmondy nougat crispedricewafer
+100 Grand            1      0       1              0      0                1
+3 Musketeers         1      0       0              0      1                0
+One dime             0      0       0              0      0                0
+One quarter          0      0       0              0      0                0
+Air Heads            0      1       0              0      0                0
+Almond Joy           1      0       0              1      0                0
+             hard bar pluribus sugarpercent pricepercent winpercent
+100 Grand       0   1        0        0.732        0.860   66.97173
+3 Musketeers    0   1        0        0.604        0.511   67.60294
+One dime        0   0        0        0.011        0.116   32.26109
+One quarter     0   0        0        0.011        0.511   46.11650
+Air Heads       0   0        0        0.906        0.511   52.34146
+Almond Joy      0   1        0        0.465        0.767   50.34755</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q1. How many different candy types are in this data set?</p>
+</blockquote>
+<p>85 different candy types</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(candy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 85 12</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q2. How many fruity candy types in this data set?</p>
+</blockquote>
+<p>38 fruity candy types</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(candy<span class="sc">$</span>fruity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 38</code></pre>
+</div>
+</div>
+</section>
+<section id="what-is-your-favorite-candy" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-your-favorite-candy">What is your favorite candy?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>candy[<span class="st">"Twix"</span>,]<span class="sc">$</span>winpercent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 81.64291</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q3. What is your favorite candy in the dataset and what is it’s winpercent value?</p>
+</blockquote>
+<p>Almond Joy - 84.18%</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>candy[<span class="st">"Reese's Peanut Butter cup"</span>,]<span class="sc">$</span>winpercent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 84.18029</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q4. What is the winpercent value for “Kit Kat”?</p>
+</blockquote>
+<p>Kit Kat - 76.76%</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>candy[<span class="st">"Kit Kat"</span>,]<span class="sc">$</span>winpercent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 76.7686</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q5. What is the winpercent value for “Tootsie Roll Snack Bars”?</p>
+</blockquote>
+<p>49.6535</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>candy[<span class="st">"Tootsie Roll Snack Bars"</span>,]<span class="sc">$</span>winpercent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 49.6535</code></pre>
+</div>
+</div>
+<p>There is a useful <code>skim()</code> function in the skimr package that can help give you a quick overview of a given dataset. Let’s install this package and try it on our candy data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("skimr")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"skimr"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(candy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">candy</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of rows</td>
+<td style="text-align: left;">85</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of columns</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">_______________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Column type frequency:</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">________________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Group variables</td>
+<td style="text-align: left;">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">chocolate</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.44</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▆</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fruity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▆</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">caramel</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.16</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">peanutyalmondy</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.16</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nougat</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">crispedricewafer</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hard</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">0.38</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bar</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.43</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▂</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pluribus</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▇▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sugarpercent</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.48</td>
+<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">0.73</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: left;">▇▇▇▇▆</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pricepercent</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">0.29</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">0.26</td>
+<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">0.65</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: left;">▇▇▇▇▆</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">winpercent</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">50.32</td>
+<td style="text-align: right;">14.71</td>
+<td style="text-align: right;">22.45</td>
+<td style="text-align: right;">39.14</td>
+<td style="text-align: right;">47.83</td>
+<td style="text-align: right;">59.86</td>
+<td style="text-align: right;">84.18</td>
+<td style="text-align: left;">▃▇▆▅▂</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>From the use of <code>skim()</code> function use the output to answer the following:</p>
+<blockquote class="blockquote">
+<p>Q6. Is there any variable/column that looks to be on a different scale to the majority of the other columns in the dataset?</p>
+</blockquote>
+<p>Win percent, n_missing, complete_rate</p>
+<blockquote class="blockquote">
+<p>Q7. What do you think a zero and one represent for the candy$chocolate column?</p>
+</blockquote>
+<p>True or False. If the candy is chocolate it will have a 1, if the candy is not chocolate it will have a 0.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>candy<span class="sc">$</span>chocolate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 1 1 0 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 1 0 0 0 1 1 0 1 1 1
+[39] 1 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 0 1 0 0 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 1
+[77] 1 1 0 1 0 0 0 0 1</code></pre>
+</div>
+</div>
+<p>A good place to start any exploratory analysis is with a histogram. You can do this most easily with the base R function hist(). Alternatively, you can use ggplot() with geom_hist(). Either works well in this case and (as always) its your choice.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Q8. Plot a histogram of winpercent values</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(candy<span class="sc">$</span>winpercent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q9. Is the distribution of winpercent values symmetrical?</p>
+</blockquote>
+<p>No</p>
+<blockquote class="blockquote">
+<p>Q10. Is the center of the distribution above or below 50%?</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(candy<span class="sc">$</span>winpercent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 50.31676</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q11. On average is chocolate candy higher or lower ranked than fruit candy?</p>
+</blockquote>
+<p>Yes</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> candy<span class="sc">$</span>winpercent[<span class="fu">as.logical</span>(candy<span class="sc">$</span>chocolate)]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>fruit <span class="ot">&lt;-</span> candy<span class="sc">$</span>winpercent[<span class="fu">as.logical</span>(candy<span class="sc">$</span>fruity)]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(chocolate) <span class="sc">&gt;</span> <span class="fu">mean</span>(fruit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q12. Is this difference statistically significant?</p>
+</blockquote>
+<p>yes</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>stat <span class="ot">&lt;-</span> <span class="fu">t.test</span>(chocolate, fruit)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>stat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  chocolate and fruit
+t = 6.2582, df = 68.882, p-value = 2.871e-08
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 11.44563 22.15795
+sample estimates:
+mean of x mean of y 
+ 60.92153  44.11974 </code></pre>
+</div>
+</div>
+</section>
+<section id="overall-candy-rankings" class="level2">
+<h2 class="anchored" data-anchor-id="overall-candy-rankings">Overall Candy Rankings</h2>
+<p>Let’s use the base R <code>order()</code> function together with <code>head()</code> to sort the whole dataset by winpercent. Or if you have been getting into the tidyverse and the dplyr package you can use the <code>arrange()</code> function together with <code>head()</code> to do the same thing and answer the following questions:</p>
+<blockquote class="blockquote">
+<p>Q13. What are the five least liked candy types in this set?</p>
+</blockquote>
+<p>Nik L Nip, Boston Baked Beans, Chiclets, Super Bubble, Jawbusters</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(candy[<span class="fu">order</span>(candy<span class="sc">$</span>winpercent),], <span class="at">n=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   chocolate fruity caramel peanutyalmondy nougat
+Nik L Nip                  0      1       0              0      0
+Boston Baked Beans         0      0       0              1      0
+Chiclets                   0      1       0              0      0
+Super Bubble               0      1       0              0      0
+Jawbusters                 0      1       0              0      0
+                   crispedricewafer hard bar pluribus sugarpercent pricepercent
+Nik L Nip                         0    0   0        1        0.197        0.976
+Boston Baked Beans                0    0   0        1        0.313        0.511
+Chiclets                          0    0   0        1        0.046        0.325
+Super Bubble                      0    0   0        0        0.162        0.116
+Jawbusters                        0    1   0        1        0.093        0.511
+                   winpercent
+Nik L Nip            22.44534
+Boston Baked Beans   23.41782
+Chiclets             24.52499
+Super Bubble         27.30386
+Jawbusters           28.12744</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q14. What are the top 5 all time favorite candy types out of this set?</p>
+</blockquote>
+<p>Snickers, Kit Kat, Twix, Reese’s Miniatures, Reese’s Peanut Butter cup</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(candy[<span class="fu">order</span>(candy<span class="sc">$</span>winpercent),], <span class="at">n=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                          chocolate fruity caramel peanutyalmondy nougat
+Snickers                          1      0       1              1      1
+Kit Kat                           1      0       0              0      0
+Twix                              1      0       1              0      0
+Reese's Miniatures                1      0       0              1      0
+Reese's Peanut Butter cup         1      0       0              1      0
+                          crispedricewafer hard bar pluribus sugarpercent
+Snickers                                 0    0   1        0        0.546
+Kit Kat                                  1    0   1        0        0.313
+Twix                                     1    0   1        0        0.546
+Reese's Miniatures                       0    0   0        0        0.034
+Reese's Peanut Butter cup                0    0   0        0        0.720
+                          pricepercent winpercent
+Snickers                         0.651   76.67378
+Kit Kat                          0.511   76.76860
+Twix                             0.906   81.64291
+Reese's Miniatures               0.279   81.86626
+Reese's Peanut Butter cup        0.651   84.18029</code></pre>
+</div>
+</div>
+<p>To examine more of the dataset in this vain we can make a barplot to visualize the overall rankings. We will use an iterative approach to building a useful visulization by getting a rough starting plot and then refining and adding useful details in a stepwise process.</p>
+<blockquote class="blockquote">
+<p>Q15. Make a first barplot of candy ranking based on winpercent values.</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>candy<span class="sc">$</span>winpercent <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(candy<span class="sc">$</span>winpercent)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>win <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(candy<span class="sc">$</span>winpercent)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(win) <span class="sc">+</span> </span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(candy<span class="sc">$</span>winpercent,<span class="fu">row.names</span>(candy)) <span class="sc">+</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q16. This is quite ugly, use the reorder() function to get the bars sorted by winpercent?</p>
+</blockquote>
+<p>HINT: You can use aes(winpercent, reorder(rownames(candy),winpercent)) to improve your plot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(win) <span class="sc">+</span> </span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(candy<span class="sc">$</span>winpercent, <span class="fu">reorder</span>(<span class="fu">rownames</span>(candy),candy<span class="sc">$</span>winpercent)) <span class="sc">+</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Let’s setup a color vector (that signifies candy type) that we can then use for some future plots. We start by making a vector of all black values (one for each candy). Then we overwrite chocolate (for chocolate candy), brown (for candy bars) and red (for fruity candy) values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>my_cols<span class="ot">=</span><span class="fu">rep</span>(<span class="st">"black"</span>, <span class="fu">nrow</span>(candy))</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>my_cols[<span class="fu">as.logical</span>(candy<span class="sc">$</span>chocolate)] <span class="ot">=</span> <span class="st">"chocolate"</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>my_cols[<span class="fu">as.logical</span>(candy<span class="sc">$</span>bar)] <span class="ot">=</span> <span class="st">"brown"</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>my_cols[<span class="fu">as.logical</span>(candy<span class="sc">$</span>fruity)] <span class="ot">=</span> <span class="st">"pink"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now let’s try our barplot with these colors. Note that we use fill=my_cols for geom_col(). Experiment to see what happens if you use col=mycols.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(win) <span class="sc">+</span> </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(candy<span class="sc">$</span>winpercent, <span class="fu">reorder</span>(<span class="fu">rownames</span>(candy),candy<span class="sc">$</span>winpercent)) <span class="sc">+</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill=</span>my_cols) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q17. What is the worst ranked chocolate candy?</p>
+</blockquote>
+<p>sixlets</p>
+<blockquote class="blockquote">
+<p>Q18. What is the best ranked fruity candy?</p>
+</blockquote>
+<p>starburst</p>
+</section>
+<section id="taking-a-look-at-pricepoint" class="level2">
+<h2 class="anchored" data-anchor-id="taking-a-look-at-pricepoint">Taking a look at pricepoint</h2>
+<p>What about value for money? What is the the best candy for the least money? One way to get at this would be to make a plot of winpercent vs the pricepercent variable. The pricepercent variable records the percentile rank of the candy’s price against all the other candies in the dataset. Lower vales are less expensive and high values more expensive.</p>
+<p>To this plot we will add text labels so we can more easily identify a given candy. There is a regular <code>geom_label()</code> that comes with ggplot2. However, as there are quite a few candys in our dataset lots of these labels will be overlapping and hard to read. To help with this we can use the <code>geom_text_repel()</code> function from the ggrepel packag</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("ggrepel")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrepel)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># How about a plot of price vs win</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(win) <span class="sc">+</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(candy<span class="sc">$</span>winpercent, candy<span class="sc">$</span>pricepercent, <span class="at">label=</span><span class="fu">rownames</span>(candy)) <span class="sc">+</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">col=</span>my_cols) <span class="sc">+</span> </span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">col=</span>my_cols, <span class="at">size=</span><span class="fl">3.3</span>, <span class="at">max.overlaps =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: ggrepel: 49 unlabeled data points (too many overlaps). Consider
+increasing max.overlaps</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q19. Which candy type is the highest ranked in terms of winpercent for the least money - i.e.&nbsp;offers the most bang for your buck?</p>
+</blockquote>
+<p>Reese’s miniatures</p>
+<blockquote class="blockquote">
+<p>Q20. What are the top 5 most expensive candy types in the dataset and of these which is the least popular?</p>
+</blockquote>
+<p>Nik L Nip, Nestle Smarties, Ring pop, Hershey’s Krackel, Hershey’s Milk Chocolate</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>ord <span class="ot">&lt;-</span> <span class="fu">order</span>(candy<span class="sc">$</span>pricepercent, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>( candy[ord,<span class="fu">c</span>(<span class="dv">11</span>,<span class="dv">12</span>)], <span class="at">n=</span><span class="dv">5</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                         pricepercent winpercent
+Nik L Nip                       0.976         22
+Nestle Smarties                 0.976         37
+Ring pop                        0.965         35
+Hershey's Krackel               0.918         62
+Hershey's Milk Chocolate        0.918         56</code></pre>
+</div>
+</div>
+</section>
+<section id="exploring-the-correlation-structure" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-the-correlation-structure">Exploring the correlation structure</h2>
+<p>Now that we’ve explored the dataset a little, we’ll see how the variables interact with one another. We’ll use correlation and view the results with the corrplot package to plot a correlation matrix.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("corrplot")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>corrplot 0.92 loaded</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>cij <span class="ot">&lt;-</span> <span class="fu">cor</span>(candy)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(cij)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q22. Examining this plot what two variables are anti-correlated (i.e.&nbsp;have minus values)?</p>
+</blockquote>
+<p>chocolate and fruity</p>
+<blockquote class="blockquote">
+<p>Q23. Similarly, what two variables are most positively correlated?</p>
+</blockquote>
+<p>chocolate and win percent</p>
+</section>
+<section id="principal-component-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="principal-component-analysis">Principal Component Analysis</h2>
+<p>Let’s apply PCA using the <code>prcomp()</code> function to our candy dataset remembering to set the scale=TRUE argument.</p>
+<p>Side-note: Feel free to examine what happens if you leave this argument out (i.e.&nbsp;use the default scale=FALSE). Then examine the <code>summary(pca)</code> and <code>pca$rotation[,1]</code> component and see that it is dominated by winpercent (which is after all measured on a very different scale than the other variables).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">prcomp</span>(candy, <span class="at">scale =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Importance of components:
+                          PC1    PC2    PC3     PC4     PC5     PC6    PC7
+Standard deviation     2.0779 1.1383 1.1093 1.07543 0.95163 0.81882 0.8161
+Proportion of Variance 0.3598 0.1080 0.1026 0.09638 0.07547 0.05587 0.0555
+Cumulative Proportion  0.3598 0.4678 0.5703 0.66671 0.74218 0.79805 0.8536
+                           PC8     PC9    PC10    PC11    PC12
+Standard deviation     0.74518 0.67856 0.62366 0.43997 0.39894
+Proportion of Variance 0.04627 0.03837 0.03241 0.01613 0.01326
+Cumulative Proportion  0.89982 0.93819 0.97061 0.98674 1.00000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pca<span class="sc">$</span>x[,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pca<span class="sc">$</span>x[,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>], <span class="at">col=</span>my_cols, <span class="at">pch=</span><span class="dv">16</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can make a much nicer plot with the ggplot2 package but it is important to note that ggplot works best when you supply an input data.frame that includes a separate column for each of the aesthetics you would like displayed in your final plot. To accomplish this we make a new data.frame here that contains our PCA results with all the rest of our candy data. We will then use this for making plots below</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new data-frame with our PCA results and candy data</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">cbind</span>(candy, pca<span class="sc">$</span>x[,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(my_data) <span class="sc">+</span> </span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(<span class="at">x=</span>PC1, <span class="at">y=</span>PC2, </span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">size=</span>winpercent<span class="sc">/</span><span class="dv">100</span>,  </span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">text=</span><span class="fu">rownames</span>(my_data),</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">label=</span><span class="fu">rownames</span>(my_data)) <span class="sc">+</span></span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">geom_point</span>(<span class="at">col=</span>my_cols)</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Again we can use the ggrepel package and the function ggrepel::geom_text_repel() to label up the plot with non overlapping candy names like. We will also add a title and subtitle like so:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrepel)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_text_repel</span>(<span class="at">size=</span><span class="fl">3.3</span>, <span class="at">col=</span>my_cols, <span class="at">max.overlaps =</span> <span class="dv">7</span>)  <span class="sc">+</span> </span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Halloween Candy PCA Space"</span>,</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle=</span><span class="st">"Colored by type: chocolate bar (dark brown), chocolate other (light brown), fruity (red), other (black)"</span>,</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">"Data from 538"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: ggrepel: 38 unlabeled data points (too many overlaps). Consider
+increasing max.overlaps</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>see more candy labels you can change the max.overlaps value to allow more overlapping labels or pass the ggplot object p to plotly like so to generate an interactive plot that you can mouse over to see labels:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("plotly")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'plotly'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggplot2':
+
+    last_plot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:graphics':
+
+    layout</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-e381cd47377e38f24ba5" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e381cd47377e38f24ba5">{"x":{"data":[{"x":[-3.80995769554195,-2.79366798441655,1.19811806648951,0.440528054612445,0.699873010907195,-2.47217600710638,-4.09662192316994,0.712357778695045,1.00323886416046,0.811558968357627,-2.14370564787246,1.64263705342492,2.38351193298029,1.50816208724338,2.14555396297594,2.25359036645382,1.81859144998245,1.96866374361897,1.32599852157532,1.1046192393571,1.46047348775686,1.66218593702916,0.375568476289312,-3.05324154858327,-2.11752208865187,-2.18475957174264,2.61853763738764,-0.165744469888775,-2.8648731439719,1.65316415249108,2.32984178695714,1.20546800487589,-1.52290321148386,-0.76546616374905,1.57383751969262,-0.777644801394386,-3.70192417386958,-3.22367083557371,-3.0531953409613,-1.80579666264417,-2.67322645418094,1.93300085744787,-2.97370353027489,-2.9283853819734,1.63900749276009,1.98063163517525,-2.39682579056552,-1.38915437962175,1.67659003228088,1.76502484260674,2.12191681403716,-1.54334236307631,-2.29149118752544,-1.40712867316993,-2.12526360651569,1.18914860817323,-1.60777727609896,2.11095810759331,2.26684904528019,0.824067655214953,1.28435409613887,1.46365405104758,-0.266790975226197,2.61464744624174,-4.39230528359225,-4.01455462765937,1.82508765008655,1.98197511063167,1.49750513242313,2.81059835455846,-0.020416044797488,0.190809680651197,1.98917003436507,1.01411942485809,0.860026505197936,-0.41390270538339,0.67381245226925,-1.30776540929505,1.84433625668899,-4.12653753258539,1.56351417503672,2.29834405132465,1.84640596223333,0.694865639734147,-1.42505872520749],"y":[-0.589462592720807,-1.52691759085639,0.1508942871058,0.441353626600872,-0.558834298278018,0.697115142220608,-2.11242274380975,1.19772886595287,0.296455701901103,-1.69702216749663,-1.95351575420992,0.0867106355938812,0.427614606763714,0.174972324563577,-1.83555653480425,0.579051984181816,-1.77329329122521,-1.04469830131839,0.602663159333267,0.625785158735547,0.514401470363572,0.382008936909028,1.55679260900359,0.688329307418606,0.245667204036227,0.289798048521075,-0.636689387580333,1.61879007920151,0.902227133682954,-0.247938295547248,-1.26335464869719,-0.0894263999841672,1.94502450636623,1.2710252481125,0.0802970524649953,0.425165607469223,-2.48761552241516,-2.82775335463658,-1.16254493024574,0.19590166510252,0.911731336547541,-0.892580743611715,0.878413795135448,0.809898866857378,0.414829622087708,0.506932007350932,-1.49483907979409,2.10405303915902,0.877512713347984,-0.790779122079405,0.139559903144466,1.91547440798586,1.48197500317707,2.31479063458435,1.08776046899928,-1.69519807257078,0.193688948778091,-0.874139578656627,-1.11315142476863,1.16976704620947,0.251858359891498,0.134176107931904,1.36721763888276,-0.612466812821632,-1.79592457757408,-0.0327330555486978,0.879073732947854,0.776101762483209,0.952401140111976,-1.03199851931151,-0.809363002515107,-1.21390010033138,-0.406769962530865,0.507674620965698,-1.10979387317965,0.579049006918028,1.35396764453674,-0.0126146624405927,0.534094761980418,-0.207881887341322,-0.189097169567451,-1.29896428128732,0.502373771976225,-2.03023337504655,1.37932441120719],"text":["PC1: -3.80995770<br />PC2: -0.58946259<br />winpercent/100: 0.66<br />100 Grand<br />rownames(my_data): 100 Grand","PC1: -2.79366798<br />PC2: -1.52691759<br />winpercent/100: 0.67<br />3 Musketeers<br />rownames(my_data): 3 Musketeers","PC1:  1.19811807<br />PC2:  0.15089429<br />winpercent/100: 0.32<br />One dime<br />rownames(my_data): One dime","PC1:  0.44052805<br />PC2:  0.44135363<br />winpercent/100: 0.46<br />One quarter<br />rownames(my_data): One quarter","PC1:  0.69987301<br />PC2: -0.55883430<br />winpercent/100: 0.52<br />Air Heads<br />rownames(my_data): Air Heads","PC1: -2.47217601<br />PC2:  0.69711514<br />winpercent/100: 0.50<br />Almond Joy<br />rownames(my_data): Almond Joy","PC1: -4.09662192<br />PC2: -2.11242274<br />winpercent/100: 0.56<br />Baby Ruth<br />rownames(my_data): Baby Ruth","PC1:  0.71235778<br />PC2:  1.19772887<br />winpercent/100: 0.23<br />Boston Baked Beans<br />rownames(my_data): Boston Baked Beans","PC1:  1.00323886<br />PC2:  0.29645570<br />winpercent/100: 0.38<br />Candy Corn<br />rownames(my_data): Candy Corn","PC1:  0.81155897<br />PC2: -1.69702217<br />winpercent/100: 0.34<br />Caramel Apple Pops<br />rownames(my_data): Caramel Apple Pops","PC1: -2.14370565<br />PC2: -1.95351575<br />winpercent/100: 0.38<br />Charleston Chew<br />rownames(my_data): Charleston Chew","PC1:  1.64263705<br />PC2:  0.08671064<br />winpercent/100: 0.36<br />Chewey Lemonhead Fruit Mix<br />rownames(my_data): Chewey Lemonhead Fruit Mix","PC1:  2.38351193<br />PC2:  0.42761461<br />winpercent/100: 0.24<br />Chiclets<br />rownames(my_data): Chiclets","PC1:  1.50816209<br />PC2:  0.17497232<br />winpercent/100: 0.42<br />Dots<br />rownames(my_data): Dots","PC1:  2.14555396<br />PC2: -1.83555653<br />winpercent/100: 0.39<br />Dum Dums<br />rownames(my_data): Dum Dums","PC1:  2.25359037<br />PC2:  0.57905198<br />winpercent/100: 0.43<br />Fruit Chews<br />rownames(my_data): Fruit Chews","PC1:  1.81859145<br />PC2: -1.77329329<br />winpercent/100: 0.39<br />Fun Dip<br />rownames(my_data): Fun Dip","PC1:  1.96866374<br />PC2: -1.04469830<br />winpercent/100: 0.46<br />Gobstopper<br />rownames(my_data): Gobstopper","PC1:  1.32599852<br />PC2:  0.60266316<br />winpercent/100: 0.57<br />Haribo Gold Bears<br />rownames(my_data): Haribo Gold Bears","PC1:  1.10461924<br />PC2:  0.62578516<br />winpercent/100: 0.34<br />Haribo Happy Cola<br />rownames(my_data): Haribo Happy Cola","PC1:  1.46047349<br />PC2:  0.51440147<br />winpercent/100: 0.51<br />Haribo Sour Bears<br />rownames(my_data): Haribo Sour Bears","PC1:  1.66218594<br />PC2:  0.38200894<br />winpercent/100: 0.42<br />Haribo Twin Snakes<br />rownames(my_data): Haribo Twin Snakes","PC1:  0.37556848<br />PC2:  1.55679261<br />winpercent/100: 0.55<br />Hershey's Kisses<br />rownames(my_data): Hershey's Kisses","PC1: -3.05324155<br />PC2:  0.68832931<br />winpercent/100: 0.62<br />Hershey's Krackel<br />rownames(my_data): Hershey's Krackel","PC1: -2.11752209<br />PC2:  0.24566720<br />winpercent/100: 0.56<br />Hershey's Milk Chocolate<br />rownames(my_data): Hershey's Milk Chocolate","PC1: -2.18475957<br />PC2:  0.28979805<br />winpercent/100: 0.59<br />Hershey's Special Dark<br />rownames(my_data): Hershey's Special Dark","PC1:  2.61853764<br />PC2: -0.63668939<br />winpercent/100: 0.28<br />Jawbusters<br />rownames(my_data): Jawbusters","PC1: -0.16574447<br />PC2:  1.61879008<br />winpercent/100: 0.57<br />Junior Mints<br />rownames(my_data): Junior Mints","PC1: -2.86487314<br />PC2:  0.90222713<br />winpercent/100: 0.76<br />Kit Kat<br />rownames(my_data): Kit Kat","PC1:  1.65316415<br />PC2: -0.24793830<br />winpercent/100: 0.41<br />Laffy Taffy<br />rownames(my_data): Laffy Taffy","PC1:  2.32984179<br />PC2: -1.26335465<br />winpercent/100: 0.39<br />Lemonhead<br />rownames(my_data): Lemonhead","PC1:  1.20546800<br />PC2: -0.08942640<br />winpercent/100: 0.52<br />Lifesavers big ring gummies<br />rownames(my_data): Lifesavers big ring gummies","PC1: -1.52290321<br />PC2:  1.94502451<br />winpercent/100: 0.71<br />Peanut butter M&M's<br />rownames(my_data): Peanut butter M&M's","PC1: -0.76546616<br />PC2:  1.27102525<br />winpercent/100: 0.66<br />M&M's<br />rownames(my_data): M&M's","PC1:  1.57383752<br />PC2:  0.08029705<br />winpercent/100: 0.46<br />Mike & Ike<br />rownames(my_data): Mike & Ike","PC1: -0.77764480<br />PC2:  0.42516561<br />winpercent/100: 0.55<br />Milk Duds<br />rownames(my_data): Milk Duds","PC1: -3.70192417<br />PC2: -2.48761552<br />winpercent/100: 0.73<br />Milky Way<br />rownames(my_data): Milky Way","PC1: -3.22367084<br />PC2: -2.82775335<br />winpercent/100: 0.60<br />Milky Way Midnight<br />rownames(my_data): Milky Way Midnight","PC1: -3.05319534<br />PC2: -1.16254493<br />winpercent/100: 0.64<br />Milky Way Simply Caramel<br />rownames(my_data): Milky Way Simply Caramel","PC1: -1.80579666<br />PC2:  0.19590167<br />winpercent/100: 0.47<br />Mounds<br />rownames(my_data): Mounds","PC1: -2.67322645<br />PC2:  0.91173134<br />winpercent/100: 0.54<br />Mr Good Bar<br />rownames(my_data): Mr Good Bar","PC1:  1.93300086<br />PC2: -0.89258074<br />winpercent/100: 0.55<br />Nerds<br />rownames(my_data): Nerds","PC1: -2.97370353<br />PC2:  0.87841380<br />winpercent/100: 0.70<br />Nestle Butterfinger<br />rownames(my_data): Nestle Butterfinger","PC1: -2.92838538<br />PC2:  0.80989887<br />winpercent/100: 0.66<br />Nestle Crunch<br />rownames(my_data): Nestle Crunch","PC1:  1.63900749<br />PC2:  0.41482962<br />winpercent/100: 0.22<br />Nik L Nip<br />rownames(my_data): Nik L Nip","PC1:  1.98063164<br />PC2:  0.50693201<br />winpercent/100: 0.39<br />Now & Later<br />rownames(my_data): Now & Later","PC1: -2.39682579<br />PC2: -1.49483908<br />winpercent/100: 0.46<br />Payday<br />rownames(my_data): Payday","PC1: -1.38915438<br />PC2:  2.10405304<br />winpercent/100: 0.69<br />Peanut M&Ms<br />rownames(my_data): Peanut M&Ms","PC1:  1.67659003<br />PC2:  0.87751271<br />winpercent/100: 0.37<br />Pixie Sticks<br />rownames(my_data): Pixie Sticks","PC1:  1.76502484<br />PC2: -0.79077912<br />winpercent/100: 0.41<br />Pop Rocks<br />rownames(my_data): Pop Rocks","PC1:  2.12191681<br />PC2:  0.13955990<br />winpercent/100: 0.37<br />Red vines<br />rownames(my_data): Red vines","PC1: -1.54334236<br />PC2:  1.91547441<br />winpercent/100: 0.81<br />Reese's Miniatures<br />rownames(my_data): Reese's Miniatures","PC1: -2.29149119<br />PC2:  1.48197500<br />winpercent/100: 0.84<br />Reese's Peanut Butter cup<br />rownames(my_data): Reese's Peanut Butter cup","PC1: -1.40712867<br />PC2:  2.31479063<br />winpercent/100: 0.73<br />Reese's pieces<br />rownames(my_data): Reese's pieces","PC1: -2.12526361<br />PC2:  1.08776047<br />winpercent/100: 0.72<br />Reese's stuffed with pieces<br />rownames(my_data): Reese's stuffed with pieces","PC1:  1.18914861<br />PC2: -1.69519807<br />winpercent/100: 0.35<br />Ring pop<br />rownames(my_data): Ring pop","PC1: -1.60777728<br />PC2:  0.19368895<br />winpercent/100: 0.65<br />Rolo<br />rownames(my_data): Rolo","PC1:  2.11095811<br />PC2: -0.87413958<br />winpercent/100: 0.29<br />Root Beer Barrels<br />rownames(my_data): Root Beer Barrels","PC1:  2.26684905<br />PC2: -1.11315142<br />winpercent/100: 0.42<br />Runts<br />rownames(my_data): Runts","PC1:  0.82406766<br />PC2:  1.16976705<br />winpercent/100: 0.34<br />Sixlets<br />rownames(my_data): Sixlets","PC1:  1.28435410<br />PC2:  0.25185836<br />winpercent/100: 0.63<br />Skittles original<br />rownames(my_data): Skittles original","PC1:  1.46365405<br />PC2:  0.13417611<br />winpercent/100: 0.55<br />Skittles wildberry<br />rownames(my_data): Skittles wildberry","PC1: -0.26679098<br />PC2:  1.36721764<br />winpercent/100: 0.37<br />Nestle Smarties<br />rownames(my_data): Nestle Smarties","PC1:  2.61464745<br />PC2: -0.61246681<br />winpercent/100: 0.45<br />Smarties candy<br />rownames(my_data): Smarties candy","PC1: -4.39230528<br />PC2: -1.79592458<br />winpercent/100: 0.76<br />Snickers<br />rownames(my_data): Snickers","PC1: -4.01455463<br />PC2: -0.03273306<br />winpercent/100: 0.59<br />Snickers Crisper<br />rownames(my_data): Snickers Crisper","PC1:  1.82508765<br />PC2:  0.87907373<br />winpercent/100: 0.59<br />Sour Patch Kids<br />rownames(my_data): Sour Patch Kids","PC1:  1.98197511<br />PC2:  0.77610176<br />winpercent/100: 0.52<br />Sour Patch Tricksters<br />rownames(my_data): Sour Patch Tricksters","PC1:  1.49750513<br />PC2:  0.95240114<br />winpercent/100: 0.67<br />Starburst<br />rownames(my_data): Starburst","PC1:  2.81059835<br />PC2: -1.03199852<br />winpercent/100: 0.34<br />Strawberry bon bons<br />rownames(my_data): Strawberry bon bons","PC1: -0.02041604<br />PC2: -0.80936300<br />winpercent/100: 0.33<br />Sugar Babies<br />rownames(my_data): Sugar Babies","PC1:  0.19080968<br />PC2: -1.21390010<br />winpercent/100: 0.32<br />Sugar Daddy<br />rownames(my_data): Sugar Daddy","PC1:  1.98917003<br />PC2: -0.40676996<br />winpercent/100: 0.27<br />Super Bubble<br />rownames(my_data): Super Bubble","PC1:  1.01411942<br />PC2:  0.50767462<br />winpercent/100: 0.54<br />Swedish Fish<br />rownames(my_data): Swedish Fish","PC1:  0.86002651<br />PC2: -1.10979387<br />winpercent/100: 0.48<br />Tootsie Pop<br />rownames(my_data): Tootsie Pop","PC1: -0.41390271<br />PC2:  0.57904901<br />winpercent/100: 0.43<br />Tootsie Roll Juniors<br />rownames(my_data): Tootsie Roll Juniors","PC1:  0.67381245<br />PC2:  1.35396764<br />winpercent/100: 0.45<br />Tootsie Roll Midgies<br />rownames(my_data): Tootsie Roll Midgies","PC1: -1.30776541<br />PC2: -0.01261466<br />winpercent/100: 0.49<br />Tootsie Roll Snack Bars<br />rownames(my_data): Tootsie Roll Snack Bars","PC1:  1.84433626<br />PC2:  0.53409476<br />winpercent/100: 0.47<br />Trolli Sour Bites<br />rownames(my_data): Trolli Sour Bites","PC1: -4.12653753<br />PC2: -0.20788189<br />winpercent/100: 0.81<br />Twix<br />rownames(my_data): Twix","PC1:  1.56351418<br />PC2: -0.18909717<br />winpercent/100: 0.45<br />Twizzlers<br />rownames(my_data): Twizzlers","PC1:  2.29834405<br />PC2: -1.29896428<br />winpercent/100: 0.39<br />Warheads<br />rownames(my_data): Warheads","PC1:  1.84640596<br />PC2:  0.50237377<br />winpercent/100: 0.44<br />Welch's Fruit Snacks<br />rownames(my_data): Welch's Fruit Snacks","PC1:  0.69486564<br />PC2: -2.03023338<br />winpercent/100: 0.41<br />Werther's Original Caramel<br />rownames(my_data): Werther's Original Caramel","PC1: -1.42505873<br />PC2:  1.37932441<br />winpercent/100: 0.49<br />Whoppers<br />rownames(my_data): Whoppers"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":["rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(210,105,30,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(210,105,30,1)"],"opacity":1,"size":[19.6993424725839,19.8792330967672,11.369001532937,15.5370900819828,16.9248820845402,16.4791465517905,17.7738261009894,6.17952995905872,13.3795371590695,12.0933797492421,13.3795371590695,12.7595142673038,7.17364350286819,14.5126645841965,13.6749909560058,14.7777202251473,13.6749909560058,15.5370900819828,17.978133237107,12.0933797492421,16.7039360205929,14.5126645841965,17.5664916977174,18.9584755068189,17.7738261009894,18.3781722304228,9.65830882051895,17.978133237107,21.4158713434466,14.2408954849259,13.6749909560058,16.9248820845402,20.5795443590803,19.6993424725839,15.5370900819828,17.5664916977174,20.9189729270119,18.5741359607965,19.333320789035,15.7795395590731,17.3559913343074,17.5664916977174,20.407231939429,19.6993424725839,3.77952755905512,13.6749909560058,15.5370900819828,20.2331150536133,13.0746968851269,14.2408954849259,13.0746968851269,22.2142957887172,22.6771653543307,20.9189729270119,20.7501072781205,12.4328592735047,19.517395755256,10.1293370554228,14.5126645841965,12.0933797492421,19.1470410964152,17.5664916977174,13.0746968851269,15.2895347250186,21.4158713434466,18.3781722304228,18.3781722304228,16.9248820845402,19.8792330967672,12.0933797492421,11.7394350158195,11.369001532937,9.14609607162581,17.3559913343074,16.017186629343,14.7777202251473,15.2895347250186,16.2503058443356,15.7795395590731,22.2142957887172,15.2895347250186,13.6749909560058,15.0365366396461,14.2408954849259,16.2503058443356],"symbol":"circle","line":{"width":1.88976377952756,"color":["rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(210,105,30,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(0,0,0,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(210,105,30,1)","rgba(210,105,30,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(165,42,42,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(255,192,203,1)","rgba(0,0,0,1)","rgba(210,105,30,1)"]}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.2283105022831,"r":7.30593607305936,"b":40.1826484018265,"l":37.2602739726027},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-4.75245046549979,3.170743536466],"tickmode":"array","ticktext":["-2.5","0.0","2.5"],"tickvals":[-2.5,0,2.5],"categoryorder":"array","categoryarray":["-2.5","0.0","2.5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"PC1","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-3.08488055409762,2.5719178340454],"tickmode":"array","ticktext":["-3","-2","-1","0","1","2"],"tickvals":[-3,-2,-1,0,1,2],"categoryorder":"array","categoryarray":["-3","-2","-1","0","1","2"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"PC2","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895},"title":{"text":"winpercent/100","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"6f7f71e651d2":{"x":{},"y":{},"size":{},"text":{},"label":{},"type":"scatter"}},"cur_data":"6f7f71e651d2","visdat":{"6f7f71e651d2":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Let’s finish by taking a quick look at PCA our loadings. Do these make sense to you? Notice the opposite effects of chocolate and fruity and the similar effects of chocolate and bar (i.e.&nbsp;we already know they are correlated).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(pca<span class="sc">$</span>rotation[,<span class="dv">1</span>], <span class="at">las=</span><span class="dv">2</span>, <span class="at">ylab=</span><span class="st">"PC1 Contribution"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Class10_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Q24. What original variables are picked up strongly by PC1 in the positive direction? Do these make sense to you?</p>
+</blockquote>
+<p>fruity, hard, and pluribus. Yes this makes sense because fruity candies are often hard candies and come in bags of multiples.</p>
+<p>HINT. pluribus means the candy comes in a bag or box of multiple candies</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
